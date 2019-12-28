@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🤡wp's blog</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/public/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/article.css">
+    <script type="text/javascript" src="/public/js/jquery-1.12.4.js"></script>
+    <script src="/public/lib/bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<!-- 雪花 -->
+<div class="Snow">
+    <canvas id="Snow"></canvas>
+</div>
+<!-- 导航栏 -->
+<div class="nav-header">
+    <div class="header">
+        <ul class="ul-list">
+            <li><a href="index.html">
+                    <img src="/public/img/lo.gif" style="height: 100%;border-radius: 50%">&nbsp;<strong>wp's blog</strong>
+                </a>
+            </li>
+            <li class="ul-list-li">
+                <a href="/index.html" class="li_a active" onclick="nav(0)"><img src="/public/img/home.svg" style="width: 30px; height: 30px;">首页</a>
+            </li>
+            <li class="ul-list-li">
+                <a href="#" class="li_a" onclick="nav(1)"><img src="/public/img/music2.png">音乐吧</a>
+                <ol class="ol-list">
+                    <li><a href="">周杰伦</a></li>
+                    <li><a href="">陈奕迅</a></li>
+                    <li><a href="">孙燕姿</a></li>
+                    <li><a href="">周柏豪</a></li>
+                </ol>
+            </li>
+            <li class="ul-list-li">
+                <a href="#" class="li_a" onclick="nav(2)">🥘美食吧</a>
+                <ol class="ol-list">
+                    <li><a href="">火锅</a></li>
+                    <li><a href="">烧烤</a></li>
+                    <li><a href="">面</a></li>
+                    <li><a href="">烤肉</a></li>
+                </ol>
+            </li>
+            <li class="ul-list-li">
+                <a href="#" class="li_a" onclick="nav(3)">👧生活圈</a>
+            </li>
+            <li class="ul-list-li">
+                <a href="#" class="li_a" onclick="nav(4)"><img src="/public/img/message.png">留言板</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 轮播图 -->
+<div class="lunbotu">
+        <div id="body_div">
+            <img id="tu" src="/public/img/body17.jpeg">
+            <div class="btn">
+                <div class="btn-left" onclick="prev()">    
+                </div>
+                <div class="btn-right" onclick="next()"> 
+
+                </div>
+            </div>
+
+            <div class="dot">
+                <div class="dot-item active" onclick="jump(0)"></div>
+                <div class="dot-item" onclick="jump(1)"></div>
+                <div class="dot-item" onclick="jump(2)"></div>
+                <div class="dot-item" onclick="jump(3)"></div>
+                <div class="dot-item" onclick="jump(4)"></div>
+                </div>
+        </div>
+        <div class="flex">
+            <div class="flex-container">
+                <div class="flex2">
+                    <div class="flex-item2">
+                        <img src="/public/img/bg11.jpg">
+                    </div>
+                    <div class="flex-item2">
+                        <p>Wuping</p>
+                        <p>China | Beihai</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="flex-container">
+                <div class="flex3">
+                    <div class="flex-item3">
+                        <a href="#"><img src="/public/img/qq.svg"></a>
+                    </div>
+                    <div class="flex-item3">
+                        <a href="#"><img src="/public/img/weixin.svg"></a>
+                    </div>
+                    <div class="flex-item3">
+                        <a href="#"><img src="/public/img/weibo.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<!-- 主要分布 -->
+<div class="midd">
+    <div class="mid-left">
+        <div class="static">
+            <p><img src="/public/img/braille.png"> 统计信息</p>
+            <hr>
+            <a href="#">📃文章数量 : 10</a>
+            <a href="#">📑标签数量 : 7</a>
+            <a href="#">📇栏目数量 : 4</a>
+            <a href="#">💬评论数量 : 520</a>
+            <a href="#">👁‍🗨访问数量 : 1520</a>
+        </div>
+
+        <div class="static2">
+            <p><img src="/public/img/chat.png"> 最新评论</p>
+            <hr>
+            <a href="#"><img src="/public/img/rabbit.png"></a>
+            <a href="#"><img src="/public/img/animal1.png"></a>
+            <a href="#"><img src="/public/img/animal2.png"></a>
+            <a href="#"><img src="/public/img/animal3.png"></a>
+            <a href="#"><img src="/public/img/animal4.png"></a>
+            <a href="#"><img src="/public/img/animal5.png"></a>
+            <a href="#"><img src="/public/img/animal6.png"></a>
+            <a href="#"><img src="/public/img/animal7.png"></a>
+            <a href="#"><img src="/public/img/animal14.png"></a>
+            <a href="#"><img src="/public/img/animal9.png"></a>
+            <a href="#"><img src="/public/img/animal10.png"></a>
+            <a href="#"><img src="/public/img/animal11.png"></a>
+            <a href="#"><img src="/public/img/animal12.png"></a>
+            <a href="#"><img src="/public/img/animal13.png"></a><a href="#"><img src="/public/img/more.png"></a>   
+        </div>
+        <div class="static3">
+            <p><img src="/public/img/labels.png"> 标签合集</p>
+            <hr>
+            <div class="static3-div1"><a>摄影</a></div>
+            <div class="static3-div2"><a>美食</a></div>
+            <div class="static3-div3"><a>生活圈</a></div>
+            <div  class="static3-div4"><a>音乐</a></div>
+            <div class="static3-div5"><a>HTML</a></div>
+            <div class="static3-div6"><a>CSS</a></div>
+            <div class="static3-div7"><a>JavaScript</a></div>
+            </div>
+    </div>
+    <div class="mid-right">
+        <div class="page-search">
+            <form onSubmit="submitFn(this, event);">
+                <div class="search-wrapper">
+                    <div class="input-holder">
+                        <input type="text" class="search-input" placeholder="请输入关键词😊" />
+                        <button class="search-icon" onClick="searchToggle(this, event);"><span></span></button>
+                    </div>
+                    <span class="close" onClick="searchToggle(this, event);"></span>
+                    <div class="result-container">
+
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="page-content">
+            <h1>一路向北</h1>
+            <div class="article-tag">
+                    <span>🕕2019-12-28 17:30:53</span>
+                    <span>💬3条评论</span>
+                    <span>👁‍96次浏览</span>
+                    <span>👍12人点赞</span>
+                    <span>🧚‍♀ wp</span>
+            </div>
+            <div class="page-content-div">
+    <p>《一路向北》是周杰伦演唱的一首歌曲，由周杰伦作曲，方文山作词，蔡科俊编曲，最早收录于周杰伦2005年8月在日本发行的精选集《Initial J》中
+    	<!--more-->
+    	，后收录于周杰伦2005年11月发行的专辑《十一月的萧邦》专辑中，这首歌曲是电影《头文字D》的插曲。2006年这首歌曲获得了第六届百事音乐风云榜颁奖盛典最佳影视歌曲提名。
+    </p>
+</div>
+<div class="page-content-div2">
+    <p>毫无疑问《一路向北》是周杰伦为电影献作中，最成功的一首具有英伦摇滚风格的流行情歌。周杰伦利用自己最擅长的旋律写生传达自己对电影结局的理解，再搭配方文山对旋律情境的理解与蔡科俊老师的编曲演奏，最后再由周杰伦自己灌录和声与演唱，这首作品几乎让你挑不出任何瑕疵。</p>
+    <p>开场便是与电影主题契合的赛车飞驰的声音，戴上耳机听无损的话是可以清晰的感受到赛车飞驰是由远及近由近到远的穿梭过程，我们是完全可以通过自己的耳朵辨识出赛车与我们耳朵的距离。</p>
+    <p>这样的开场前奏是比较典型的借物引入前奏的方式，比如我们会听到一些流行歌曲里的前奏开始部分是风铃声、马蹄声、电视新闻的播报声、一群老头下象棋的对白声等等，这样的方式可以简单粗暴的在第一时间与歌曲主题相吻合，并且可以迅速将听众的思绪带入到与「头文字D」相关的画面里。</p>
+    <p>比如歌曲主题的关键词有：「赛车」、「感情」、「失恋」、「道别」，不论是谱曲、编曲还是填词，只要在创作初期紧握这几个关键词便可摊开创作脉络，避免自己创作时跳脱原有基础框架。
+                赛车飞驰而过的同时，还伴随着激烈地鼓点、贝斯、电吉他对赛车飞驰而过的「音乐解释」。</p>
+    <p>那么赛车为什么要飞驰而过呢？飞驰而过时驾驶者的心情是怎样的呢？为什么歌名叫《一路向北》呢？听众肯定不明白呀！所以，在赛车飞驰而过后用非常猛烈的前奏解释着这首歌从开始部分就是非常激动非常有冲击力的。
+                这种「前奏」表现，集中传递了歌曲的风格，并且从电吉他的前奏旋律中可以感受到一股内心撕裂、情绪崩溃、不甘心舍不得却又不得不踩下油门一路向北。
+                短短30秒的前奏，蔡科俊老师用他非常擅长的吉他+Band营造出如此牛X的效果，既不俗套也不过吵，非常精准地抓住了歌曲的精髓，在30秒内表达了歌曲主题，做到了有旋律、有画面、有冲击。
+    </p>
+</div>
+
+           <!--  <div class="page-content-div">
+                <p>《一路向北》是周杰伦演唱的一首歌曲，由周杰伦作曲，方文山作词，蔡科俊编曲，最早收录于周杰伦2005年8月在日本发行的精选集《Initial J》中，后收录于周杰伦2005年11月发行的专辑《十一月的萧邦》专辑中，这首歌曲是电影《头文字D》的插曲。2006年这首歌曲获得了第六届百事音乐风云榜颁奖盛典最佳影视歌曲提名。
+                </p>
+            </div> -->
+            <!-- <div class="page-content-div2">
+                <p>毫无疑问《一路向北》是周杰伦为电影献作中，最成功的一首具有英伦摇滚风格的流行情歌。周杰伦利用自己最擅长的旋律写生传达自己对电影结局的理解，再搭配方文山对旋律情境的理解与蔡科俊老师的编曲演奏，最后再由周杰伦自己灌录和声与演唱，这首作品几乎让你挑不出任何瑕疵。</p>
+                <p>开场便是与电影主题契合的赛车飞驰的声音，戴上耳机听无损的话是可以清晰的感受到赛车飞驰是由远及近由近到远的穿梭过程，我们是完全可以通过自己的耳朵辨识出赛车与我们耳朵的距离。</p>
+
+                <p>这样的开场前奏是比较典型的借物引入前奏的方式，比如我们会听到一些流行歌曲里的前奏开始部分是风铃声、马蹄声、电视新闻的播报声、一群老头下象棋的对白声等等，这样的方式可以简单粗暴的在第一时间与歌曲主题相吻合，并且可以迅速将听众的思绪带入到与「头文字D」相关的画面里。</p>
+
+                <p>比如歌曲主题的关键词有：「赛车」、「感情」、「失恋」、「道别」，不论是谱曲、编曲还是填词，只要在创作初期紧握这几个关键词便可摊开创作脉络，避免自己创作时跳脱原有基础框架。
+
+                赛车飞驰而过的同时，还伴随着激烈地鼓点、贝斯、电吉他对赛车飞驰而过的「音乐解释」。</p>
+
+                <p>那么赛车为什么要飞驰而过呢？飞驰而过时驾驶者的心情是怎样的呢？为什么歌名叫《一路向北》呢？听众肯定不明白呀！所以，在赛车飞驰而过后用非常猛烈的前奏解释着这首歌从开始部分就是非常激动非常有冲击力的。
+
+                这种「前奏」表现，集中传递了歌曲的风格，并且从电吉他的前奏旋律中可以感受到一股内心撕裂、情绪崩溃、不甘心舍不得却又不得不踩下油门一路向北。
+
+                短短30秒的前奏，蔡科俊老师用他非常擅长的吉他+Band营造出如此牛X的效果，既不俗套也不过吵，非常精准地抓住了歌曲的精髓，在30秒内表达了歌曲主题，做到了有旋律、有画面、有冲击。
+                </p>
+            </div> -->
+            <div class="page-footer">
+                <a href="#"><img src="/public/img/tag.png"> 音乐  心情</a>
+                <a href="#"><img src="/public/img/like2.png"> 点个赞</a>
+                <a href="#"><img src="/public/img/share.png"> 分享</a>
+            </div>
+        </div>
+        <div class="article-nav">
+                <ul class="pager">
+                  <li class="previous"><a href="/food/2019/12/28/eight.html">&laquo;上一篇</a></li>
+                  <li class="next"><a href="">下一篇&raquo;</a></li>
+                </ul>
+        </div>
+        <div class="page-comment">
+            <span><img src="/public/img/chat2.png">发表评论</span>
+            <hr>
+            <div class="comment-input">
+                <textarea class="form-control" placeholder="期待你的发言🤗"></textarea>
+            </div>
+            <p class="comment-submit">
+                <input type="submit" name="submit" class="btn btn-primary" id="submit" value="发表评论">
+            </p>
+        </div>
+        <div class="old-comment">
+            <div class="comment1">
+                <div class="comment1-img"><img src="/public/img/rabbit.png">
+                </div>
+                <div class="comment1-main">
+                    <div class="comment1-people">
+                        <span>一只柚子</span>
+                        <span>2019-12-26 11:23:34</span>
+                    </div>
+                    <div>好听🙈</div>
+                    <div>
+                        <span>👍支持0</span>
+                        <span>👎反对0</span>
+                        <span>回复0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="comment2">
+                <div class="comment2-img"><img src="/public/img/animal10.png">
+                </div>
+                <div class="comment2-main">
+                    <div class="comment2-people">
+                        <span>爱学习的我</span>
+                        <span>2019-12-27 09:45:36</span>
+                    </div>
+                    <div>喜欢这首歌！😸</div>
+                    <div>
+                        <span>👍支持1</span>
+                        <span>👎反对0</span>
+                        <span>回复0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="#0" class="cd-top">Top</a>
+    
+<!-- 引入外部js文件 -->
+<script src="/public/js/index.js">
+</script>
+<script type="text/javascript" src="/public/js/article.js">
+</script>
+<script type="text/javascript" src="/public/js/mid-left-fixed.js"></script>
+<script type="text/javascript" src="/public/js/cd-top.js"></script>
+<script src="/public/js/snow.js"></script>
+<script type="text/javascript" src="/public/js/page-search.js">
+</script>
+<script type="text/javascript" src="/public/js/click.js"></script>
+</body>
+</html>
